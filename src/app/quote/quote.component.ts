@@ -1,6 +1,6 @@
-import { Quote } from '@angular/compiler';
-import { Component, OnInit,Input } from '@angular/core';
 
+import { Component, OnInit,Input } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote',
@@ -15,7 +15,7 @@ quotes:Quote[] = [
  new Quote(3,'Joy','Fix','Fix the cause not the symptom','Steve Maguire',new Date(2022,1,12),0,0),
  new Quote(4,'Precious','Time','Sometimes it pays to stay in bed on Monday,rather than spending the rest of the week debugging Mondays code ','Dan Salomon',new Date(2019,0,18),0,0),
  new Quote(5,'Angela','Experience','Experience is the name everyone gives to their mistakes','Oscar Wilde',new Date(2030,3,14),0,0),
- new Quote(6,'Sharon','Code','Any fool can write code that a computer  can understand . Good programmers write code that humans can understand','Martin Fowler',new Date(2019,2,14,0,0)),
+ new Quote(6,'Sharon','Code','Any fool can write code that a computer  can understand . Good programmers write code that humans can understand','Martin Fowler',new Date(2019,2,14),0,0),
 ];
 
     
