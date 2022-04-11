@@ -7,6 +7,12 @@ import { Quote } from '../quote';
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
+  isComplete: any;
+  quoteDelete(complete:boolean){
+    this.isComplete.emit(complete);
+  }
+
+
   @Input()
   quote!: Quote;
   @Output() isRead = new EventEmitter<boolean>();
