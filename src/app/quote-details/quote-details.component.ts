@@ -20,6 +20,7 @@ export class QuoteDetailsComponent implements OnInit {
     this.quote.dislikes+=1;
   }
   
+  
   constructor() { }
 
   ngOnInit(): void {
