@@ -18,9 +18,17 @@ quotes:Quote[] = [
  new Quote(6,'Sharon','Code','Any fool can write code that a computer  can understand . Good programmers write code that humans can understand','Martin Fowler',new Date(2019,2,14),0,0),
 ];
 
-    
-  
+toggleDetails(index:any){
+  this.quotes[index].showInfo = !this.quotes[index].showInfo;
+}
 
+deleteQuote(isComplete: any,index: number){
+  if (isComplete) { 
+    let toDelete = confirm('Are you sure you want to delete ${this.quotes[index].name}?')
+    if (toDelete)
+    this.quotes.splice(index,1);
+  }
+}
   constructor() { }
 
   ngOnInit(): void {
