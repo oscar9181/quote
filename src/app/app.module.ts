@@ -9,6 +9,7 @@ import { QuoteFormComponent } from './quote-form/quote-form.component';
 import { FormsModule } from '@angular/forms';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { StrikethroughDirective } from './strikethrough.directive';
+import { AppVoteComponent } from './app-vote/app-vote.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { StrikethroughDirective } from './strikethrough.directive';
     DateCountPipe,
     QuoteFormComponent,
     QuoteDetailsComponent,
-    StrikethroughDirective
+    StrikethroughDirective,
+    AppVoteComponent
   ],
   imports: [
     BrowserModule,
