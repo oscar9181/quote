@@ -9,11 +9,18 @@ import { Quote } from '../quote';
 export class QuoteFormComponent implements OnInit {
   quoted = new Quote(0,"","","","",new Date(),0,0);
   @Output() add = new EventEmitter<Quote>();
+  addQuote: any;
 
-  addQuote(){
-this.add.emit(this.quoted);
-this.quoted = new Quote(0,"","","","",new Date(),0,0);
+  submitQuote(){
+    this.addQuote.emit(this.newQuote);
+   
   }
+  newQuote(newQuote: any) {
+    throw new Error('Method not implemented.');
+  }
+ 
+
+
   constructor() { }
 
   ngOnInit(): void {

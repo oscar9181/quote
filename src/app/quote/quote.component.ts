@@ -29,6 +29,12 @@ deleteQuote(isComplete: any,index: number){
     this.quotes.splice(index,1);
   }
 }
+addNewQuote(quote:any){
+  let quoteLength = this.quotes.length;
+  quote.id = quoteLength+1;
+  Quote.completeDate = new Date(quote.completeDate)
+  this.quotes.push(quote)
+}
   constructor() { }
 
   ngOnInit(): void {
